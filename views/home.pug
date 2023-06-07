@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+        
+
+        section#introSection
+            div Welcome to Rising Dance Academy 
+            div.small Eat Dance Sleep Repeat
+
+
+        section#missionSection 
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection 
+                div.card-box
+                    div.card-img
+                        img(src='/static/img/img1.png')
+                    div.card-content
+                        p We train you which makes you perfect and flexible as well as stronger in dancing.  
+            div.card
+                h3 Dance The Way You Like
+                div.card-box
+                    div.card-img
+                        img(src='/static/img/img3.png')
+                    div.card-content
+                        p Learn your favorate dance type and dance the way you like with RDA.
+            div.card
+                h3 Expert Teaching 
+                div.card-box
+                    div.card-img
+                        img(src='/static/img/img2.png')
+                    div.card-content
+                        p Learn from our experts which can leads to at the high level stage in dancing. 
+
+        section#sponsorsSection 
+            h2 Our Sponsors
+            div#sponsors
+                img(src="/static/img/sponsors1.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/img/sponsors2.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/img/sponsors3.png", alt="Sponsor Image", class="spImage")
+                img(src="/static/img/sponsors4.png", alt="Sponsor Image", class="spImage")     
